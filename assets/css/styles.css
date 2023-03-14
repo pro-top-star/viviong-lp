@@ -634,6 +634,63 @@ body {
   width: 1px;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.header-ttl {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 80px;
+  border-bottom: 2px solid #292929;
+  display: inline-block;
+}
+
+.main {
+  margin-top: 45px;
+}
+.main-ttl {
+  font-size: 35px;
+  line-height: 58px;
+  color: #8a1b21;
+  text-align: center;
+}
+.main-desc {
+  font-size: 62px;
+  line-height: 104px;
+  text-align: center;
+}
+.main-content {
+  margin-top: 20px;
+  display: block;
+  height: 60vh;
+  background: url(../img/women.png) right no-repeat;
+  background-size: contain;
+}
+.main-content-content {
+  width: 40%;
+}
+.main-content-backimg {
+  width: 60%;
+}
+.main-description {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .sd {
   font-size: 12px;
 }

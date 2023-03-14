@@ -1,0 +1,43 @@
+.main {
+    margin-top: 45px;
+    &-ttl {
+        font-size: 35px;
+        line-height: 58px;
+        color: $letter-red;
+        text-align: center;
+    }
+    &-desc {
+        font-size: 62px;
+        line-height: 104px;
+        text-align: center;
+    }
+    &-content {
+        margin-top: 20px;
+        display: block;
+        height: 60vh;
+        background: url(../img/women.png)right no-repeat;
+        background-size: contain;
+        &-content {
+            width: 40%;
+        }
+        &-backimg {
+            width: 60%;
+        }
+    }
+    &-description {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+        text-align: center;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
