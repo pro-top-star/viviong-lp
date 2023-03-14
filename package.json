@@ -1,0 +1,16 @@
+{
+    "name": "sass-starter",
+    "version": "1.0.0",
+    "description": "This is a template for using sass",
+    "main": "index.js",
+    "scripts": {
+        "start": "sass --watch assets/scss/styles.scss assets/css/styles.css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "pro-top-star",
+    "license": "ISC",
+    "dependencies": {
+        "sass": "^1.59.2",
+        "scss": "^0.2.4"
+    }
+}
