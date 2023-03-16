@@ -1,31 +1,36 @@
-// -----------------------------------------------------------------------------
-// This file contains all @font-face declarations, if any.
-// -----------------------------------------------------------------------------
-
-@font-face {
-  font-family: KozGoPr6N-Bold;
-  src: font('KozGoPr6N-Bold.otf');
-}
-
-@font-face {
-  font-family: KozGoPr6N-Medium;
-  src: font('KozGoPr6N-Medium.otf');
-}
-
-@font-face {
-  font-family: KozGoPr6N-Regular;
-  src: font('KozGoPr6N-Regular.otf');
-}
-
-@mixin bebas($type: 'bold') {
-  @if ($type == 'bold') {
-    font-family: bebas-neue-by-fontfabric, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-  }
-  @if ($type == 'regular') {
-    font-family: bebas-neue-by-fontfabric, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-  }
-}
+    // -----------------------------------------------------------------------------
+    // This file contains all @font-face declarations, if any.
+    // -----------------------------------------------------------------------------
+    // @font-face {
+    //   font-family: KozGoPr6N-Bold;
+    //   src: font('KozGoPr6N-Bold.otf');
+    // }
+    // @font-face {
+    //   font-family: KozGoPr6N-Medium;
+    //   src: font('KozGoPr6N-Medium.otf');
+    // }
+    // @font-face {
+    //   font-family: KozGoPr6N-Regular;
+    //   src: font('KozGoPr6N-Regular.otf');
+    // }
+    // @mixin bebas($type: 'bold') {
+    //   @if ($type == 'bold') {
+    //     font-family: bebas-neue-by-fontfabric, sans-serif;
+    //     font-style: normal;
+    //     font-weight: 700;
+    //   }
+    //   @if ($type == 'regular') {
+    //     font-family: bebas-neue-by-fontfabric, sans-serif;
+    //     font-style: normal;
+    //     font-weight: 400;
+    //   }
+    // }
+    @font-face {
+        font-family: DNPShueiYMinStd;
+        src: url('./../fonts/A-OTF-SHUEIYOBUMINSTD-M.OTF');
+    }
+    
+    @font-face {
+        font-family: YuGoPr6N;
+        src: url('./../fonts/YUGOTHR.TTC');
+    }

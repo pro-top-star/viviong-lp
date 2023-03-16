@@ -1,0 +1,149 @@
+$letter-black: #292929;
+$letter-red: #8a1b21;
+.main {
+    background: url('./../img/top-background.png') no-repeat;
+    background-size: cover;
+    .header-ttl {
+        font-size: 30px;
+        text-align: center;
+        border-bottom: 2px solid $letter-black;
+        display: inline-block;
+        font-family: DNPShueiYMinStd;
+    }
+    &-ttl {
+        font-size: 45px;
+        line-height: 60px;
+        color: $letter-red;
+        text-align: center;
+        font-family: DNPShueiYMinStd;
+        span {
+            font-size: 70px;
+        }
+    }
+    &-desc {
+        font-size: 60px;
+        line-height: 100px;
+        text-align: center;
+        font-family: DNPShueiYMinStd;
+    }
+    &-content {
+        margin-top: 20px;
+        display: block;
+        background: url(../img/new-women.png)right no-repeat;
+        background-size: contain;
+        &-content {
+            width: 40%;
+        }
+        &-backimg {
+            width: 60%;
+        }
+    }
+    &-description {
+        // float: left;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: YuGoPr6N;
+        line-height: 40px;
+        color: #494949;
+        text-shadow: 0 0 10px white;
+    }
+    &-signs {
+        text-align: center;
+        margin-top: 30px;
+        div {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            .main-signs-ff {
+                // width: 35%;
+                padding: 5px 10px;
+                font-size: 20px;
+                border-radius: 10px;
+                background: linear-gradient(#000 0%, #b07e41 0%, #c99e5a 35%, #e2bd72 50%, #c99f5a 60%, #b08042 100%);
+            }
+            .main-signs-fs {
+                width: 30%;
+            }
+            .main-signs-ft {
+                width: 25%;
+            }
+        }
+        div {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            .main-signs-sf {
+                width: 25%;
+            }
+            .main-signs-ss {
+                width: 25%;
+            }
+            .main-signs-st {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    .sp {
+        display: none !important;
+    }
+}
+
+@media (max-width: 750px) {
+    .pc {
+        display: none !important;
+    }
+    .main {
+        &-ttl {
+            font-size: 70rem;
+            line-height: 80rem;
+        }
+        &-desc {
+            font-size: 50rem;
+            line-height: 100rem;
+        }
+        &-content {
+            margin-left: 20px;
+            background-position: calc( 100% + 35px);
+            &-content {
+                width: 50%;
+                margin-bottom: 20px;
+            }
+        }
+        &-description {
+            width: 50%;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .main {
+        &-ttl {
+            font-size: 35px;
+            line-height: 50px;
+            span {
+                font-size: 50px;
+            }
+        }
+        &-desc {
+            font-size: 30px;
+            line-height: 55px;
+        }
+        &-content {
+            margin-left: 20px;
+            background-position: calc( 100% + 35px);
+            &-content {
+                width: 50%;
+            }
+        }
+        &-description {
+            width: 50%;
+            padding: 0;
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+}

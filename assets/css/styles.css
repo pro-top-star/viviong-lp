@@ -513,159 +513,45 @@ video {
   display: none;
 }
 
-html {
-  scroll-behavior: smooth;
+@font-face {
+  font-family: DNPShueiYMinStd;
+  src: url("./../fonts/A-OTF-SHUEIYOBUMINSTD-M.OTF");
 }
-
-.btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+@font-face {
+  font-family: YuGoPr6N;
+  src: url("./../fonts/YUGOTHR.TTC");
 }
-
-.pc-only {
-  display: block;
-}
-
-.sp-only {
-  display: none;
-}
-
-html {
-  font-size: 16px;
-}
-
 .main {
-  position: relative;
-  margin-top: 80px;
+  background: url("./../img/top-background.png") no-repeat;
+  background-size: cover;
 }
-
-@media (max-width: 1400px) {
-  html {
-    font-size: 0.0714285714vw;
-  }
-  .main {
-    margin-top: 80rem;
-  }
-}
-@media (max-width: 640px) {
-  html {
-    font-size: 0.15625vw;
-  }
-  .container {
-    padding: 0 30rem !important;
-  }
-  .pc-only {
-    display: none;
-  }
-  .sp-only {
-    display: block;
-  }
-}
-@font-face {
-  font-family: KozGoPr6N-Bold;
-  src: url("/assets/fonts/KozGoPr6N-Bold.otf");
-}
-@font-face {
-  font-family: KozGoPr6N-Medium;
-  src: url("/assets/fonts/KozGoPr6N-Medium.otf");
-}
-@font-face {
-  font-family: KozGoPr6N-Regular;
-  src: url("/assets/fonts/KozGoPr6N-Regular.otf");
-}
-/**
- * Basic typography style for copy text
- */
-body {
-  color: rgb(34, 34, 34);
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-/**
- * Clear inner floats
- */
-.clearfix::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-/**
- * Main content containers
- * 1. Make the container full-width with a maximum width
- * 2. Center it in the viewport
- * 3. Leave some space on the edges, especially valuable on small screens
- */
-.container {
-  max-width: 1180px; /* 1 */
-  margin-left: auto; /* 2 */
-  margin-right: auto; /* 2 */
-  padding-left: 20px; /* 3 */
-  padding-right: 20px; /* 3 */
-  width: 100%; /* 1 */
-}
-
-/**
- * Hide text while making it readable for screen readers
- * 1. Needed in WebKit-based browsers because of an implementation bug;
- *    See: https://code.google.com/p/chromium/issues/detail?id=457146
- */
-.hide-text {
-  overflow: hidden;
-  padding: 0; /* 1 */
-  text-indent: 101%;
-  white-space: nowrap;
-}
-
-/**
- * Hide element while making it readable for screen readers
- * Shamelessly borrowed from HTML5Boilerplate:
- * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
- */
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-}
-
-.header-ttl {
+.main .header-ttl {
   font-size: 30px;
   text-align: center;
-  margin-top: 80px;
   border-bottom: 2px solid #292929;
   display: inline-block;
-}
-
-.main {
-  margin-top: 45px;
+  font-family: DNPShueiYMinStd;
 }
 .main-ttl {
-  font-size: 35px;
-  line-height: 58px;
+  font-size: 45px;
+  line-height: 60px;
   color: #8a1b21;
   text-align: center;
+  font-family: DNPShueiYMinStd;
+}
+.main-ttl span {
+  font-size: 70px;
 }
 .main-desc {
-  font-size: 62px;
-  line-height: 104px;
+  font-size: 60px;
+  line-height: 100px;
   text-align: center;
+  font-family: DNPShueiYMinStd;
 }
 .main-content {
   margin-top: 20px;
   display: block;
-  height: 60vh;
-  background: url(../img/women.png) right no-repeat;
+  background: url(../img/new-women.png) right no-repeat;
   background-size: contain;
 }
 .main-content-content {
@@ -676,23 +562,103 @@ header {
 }
 .main-description {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: YuGoPr6N;
   line-height: 40px;
+  color: #494949;
+  text-shadow: 0 0 10px white;
+}
+.main-signs {
   text-align: center;
-  padding-right: 100px;
-  padding-left: 100px;
+  margin-top: 30px;
 }
-
-.flex {
+.main-signs div {
   display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.main-signs div .main-signs-ff {
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  background: linear-gradient(#000 0%, #b07e41 0%, #c99e5a 35%, #e2bd72 50%, #c99f5a 60%, #b08042 100%);
+}
+.main-signs div .main-signs-fs {
+  width: 30%;
+}
+.main-signs div .main-signs-ft {
+  width: 25%;
+}
+.main-signs div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-signs div .main-signs-sf {
+  width: 25%;
+}
+.main-signs div .main-signs-ss {
+  width: 25%;
+}
+.main-signs div .main-signs-st {
+  width: 25%;
 }
 
-.justify-center {
-  justify-content: center;
+@media (min-width: 750px) {
+  .sp {
+    display: none !important;
+  }
 }
-
-.sd {
-  font-size: 12px;
+@media (max-width: 750px) {
+  .pc {
+    display: none !important;
+  }
+  .main-ttl {
+    font-size: 70rem;
+    line-height: 80rem;
+  }
+  .main-desc {
+    font-size: 50rem;
+    line-height: 100rem;
+  }
+  .main-content {
+    margin-left: 20px;
+    background-position: calc(100% + 35px);
+  }
+  .main-content-content {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .main-description {
+    width: 50%;
+    padding: 0;
+  }
+}
+@media (max-width: 550px) {
+  .main-ttl {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .main-ttl span {
+    font-size: 50px;
+  }
+  .main-desc {
+    font-size: 30px;
+    line-height: 55px;
+  }
+  .main-content {
+    margin-left: 20px;
+    background-position: calc(100% + 35px);
+  }
+  .main-content-content {
+    width: 50%;
+  }
+  .main-description {
+    width: 50%;
+    padding: 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
