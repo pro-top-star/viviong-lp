@@ -70,7 +70,7 @@
         }
         &-signs {
             text-align: center;
-            margin: 20px 0;
+            padding: 20px 0px;
             font-family: YuGoPr6N;
             .main-signs-f {
                 z-index: 10;
@@ -262,8 +262,184 @@
             }
         }
         &-question {
+            margin-top: 85px;
+            margin-left: -35px;
             font-size: 65px;
-            line-height: 110px;
-            font-family: BodoniSvtyTwoITCTT;
+            line-height: 70px;
+            font-family: BodoniSvtyTwo;
+            color: #f9ddd3;
+        }
+    }
+    
+    @media (max-width: 550px) {
+        .price {
+            &-question {
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+    }
+    
+    // viviong
+    .viviong {
+        background: #fceee9;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &-text {
+            margin-left: 75px;
+            font-size: 20px;
+            line-height: 30px;
+            font-family: DNPShueiYMinStd;
+            color: #8a1b21;
+        }
+        &-what {
+            font-size: 70px;
+            line-height: 75px;
+            font-family: DNPShueiYMinStd;
+            color: #8a1b21;
+        }
+        &-description-f {
+            margin-top: 40px;
+            font-size: 29px;
+            font-weight: 600;
+            line-height: 50px;
+            font-family: YuGoPr6N;
+            span {
+                color: #8a1b21;
+            }
+        }
+        &-description-s {
+            margin-top: 30px;
+            font-size: 29px;
+            font-weight: 600;
+            line-height: 50px;
+            font-family: YuGoPr6N;
+        }
+        &-image {
+            margin-top: 40px;
+            display: flex;
+            justify-content: right;
+            &-pack {
+                width: 70%;
+            }
+        }
+        &-sign {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            &-box {
+                font-size: 40px;
+                line-height: 70px;
+                padding: 0px 150px;
+                background-color: #8a1b21;
+                color: white;
+                font-weight: 600;
+            }
+        }
+    }
+    
+    @media (max-width:750px) {
+        .viviong {
+            &-image {
+                &-pack {
+                    width: 90%;
+                }
+            }
+            &-sign {
+                &-box {
+                    font-size: 40rem;
+                    line-height: 70rem;
+                    padding: 10px 250rem;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 550px) {
+        .viviong {
+            &-what {
+                font-size: 40px;
+                line-height: 50px;
+            }
+            &-description-f {
+                margin-top: 20px;
+            }
+        }
+    }
+    
+    .daily {
+        padding: 50px 50px;
+        background: url('./../img/daily.png') center no-repeat;
+        background-size: 100%;
+        &-eat-f {
+            text-align: center;
+            font-size: 45px;
+            line-height: 70px;
+            color: #292929;
+            font-family: DNPShueiYMinStd;
+            &-red {
+                color: #8a1b21;
+            }
+            .sp {
+                display: none;
+            }
+        }
+        &-eat-s {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 45px;
+            line-height: 70px;
+            color: #292929;
+            font-family: DNPShueiYMinStd;
+            &-red {
+                color: #8a1b21;
+            }
+            .sp {
+                display: none;
+            }
+        }
+    }
+    
+    @media (max-width:1200px) {
+        .daily {
+            &-eat-f {
+                .sp {
+                    display: flex;
+                }
+            }
+            &-eat-s {
+                .sp {
+                    display: flex;
+                }
+            }
+        }
+    }
+    
+    @media (max-width:750px) {
+        .daily {
+            padding: 50px 50px;
+            &-eat-f {
+                font-size: 70rem;
+                line-height: 80rem;
+            }
+            &-eat-s {
+                margin-top: 20rem;
+                font-size: 70rem;
+                line-height: 80rem;
+            }
+        }
+    }
+    
+    @media (max-width:550px) {
+        .daily {
+            padding: 50px 20px;
+            // &-eat-f {
+            //     font-size: 70rem;
+            //     line-height: 80rem;
+            // }
+            // &-eat-s {
+            //     font-size: 70rem;
+            //     line-height: 80rem;
+            // }
         }
     }
