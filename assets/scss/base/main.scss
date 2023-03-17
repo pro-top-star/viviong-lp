@@ -433,13 +433,188 @@
     @media (max-width:550px) {
         .daily {
             padding: 50px 20px;
-            // &-eat-f {
-            //     font-size: 70rem;
-            //     line-height: 80rem;
-            // }
-            // &-eat-s {
-            //     font-size: 70rem;
-            //     line-height: 80rem;
-            // }
+        }
+    }
+    
+    .point {
+        &-ttl {
+            padding: 40px 0 30px;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            font-family: BodoniSvtyTwo;
+        }
+        &-three-charms {
+            display: flex;
+            justify-content: center;
+            font-size: 70px;
+            line-height: 75px;
+            font-family: BodoniSvtyTwo;
+            color: #8a1b21;
+            font-weight: 500;
+            &-ttl {
+                position: relative;
+                display: inline-flex;
+                border-bottom: 1px solid #8a1b21;
+            }
+        }
+        .point-copy {
+            position: absolute;
+            color: #8a1b21;
+            font-size: 20px;
+            line-height: 30px;
+            font-family: BodoniSvtyTwo;
+            top: -30px;
+            left: 70px;
+        }
+        &-tosaka {
+            margin-top: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-ttl {
+                font-size: 50px;
+                line-height: 70px;
+                font-family: DNPShueiYMinStd;
+            }
+            &-f-sign {
+                width: 20%;
+            }
+        }
+        &-f-image-pack {
+            display: flex;
+            justify-content: center;
+            margin-top: 45px;
+            img {
+                width: 50%;
+            }
+            .point-f-desc {
+                padding-left: 30px;
+                font-size: 30px;
+                line-height: 50px;
+                font-family: DNPShueiYMinStd;
+                .text-red {
+                    color: #8a1b21;
+                }
+            }
+        }
+        &-process {
+            margin-top: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-ttl {
+                font-size: 50px;
+                line-height: 70px;
+                font-family: DNPShueiYMinStd;
+            }
+            &-s-sign {
+                width: 20%;
+            }
+        }
+        &-s-image-pack {
+            margin-top: 45px;
+            display: flex;
+            .point-s-f {
+                .point-s-desc-sp {
+                    display: none;
+                    margin: 20px 0;
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+            }
+        }
+        &-s-desc-pc {
+            margin-top: 35px;
+            display: block;
+            font-size: 30px;
+            line-height: 50px;
+            font-family: YuGoPr6N;
+            text-align: center;
+        }
+        &-encapsule {
+            margin-top: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-ttl {
+                font-size: 50px;
+                line-height: 70px;
+                font-family: DNPShueiYMinStd;
+            }
+            &-t-sign {
+                width: 20%;
+            }
+        }
+    }
+    
+    @media (max-width: 1200px) {
+        .point {
+            &-f-image-pack {
+                .point-f-desc {
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 750px) {
+        .point {
+            &-three-charms {
+                font-size: 70rem;
+                line-height: 80rem;
+            }
+            .point-copy {
+                font-size: 15px;
+                line-height: 20px;
+                left: 70rem;
+                top: -20px;
+            }
+            &-tosaka {
+                margin-top: 25px;
+                &-ttl {
+                    font-size: 50rem;
+                    line-height: 70rem;
+                }
+            }
+            &-f-image-pack {
+                margin-top: 25px;
+                flex-direction: column;
+                img {
+                    width: 100%;
+                }
+                .point-f-desc {
+                    padding-left: 0px;
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+            }
+            &-process {
+                margin-top: 25px;
+                &-ttl {
+                    font-size: 50rem;
+                    line-height: 70rem;
+                }
+            }
+            &-s-image-pack {
+                margin-top: 25px;
+                flex-direction: column;
+                .point-s-f {
+                    .point-s-desc-sp {
+                        display: block;
+                    }
+                }
+            }
+            &-s-desc-pc {
+                display: none;
+            }
+            &-encapsule {
+                margin-top: 25px;
+                &-ttl {
+                    font-size: 50rem;
+                    line-height: 70rem;
+                }
+            }
         }
     }
