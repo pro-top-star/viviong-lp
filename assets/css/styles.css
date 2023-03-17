@@ -525,6 +525,10 @@ video {
   font-family: BodoniSvtyTwo;
   src: url("./../fonts/BodoniSvtyTwo.ttf");
 }
+@font-face {
+  font-family: NotoSans;
+  src: url("./../fonts/NotoSansJP.otf");
+}
 html {
   font-size: 0.0833333333vw;
 }
@@ -1034,17 +1038,15 @@ html {
 }
 .point .point-encapsule-img-f {
   margin-top: 45px;
-  padding: 20px;
 }
 .point .point-encapsule-img-s {
   margin-top: 25px;
   margin-bottom: 45px;
-  padding: 25px;
   position: relative;
 }
 .point .point-encapsule-img-s .price-img-button {
   position: absolute;
-  bottom: 10vw;
+  bottom: 9vw;
   display: flex;
   justify-content: center;
 }
@@ -1060,9 +1062,6 @@ html {
   .point-f-image-pack .point-f-desc {
     font-size: 25px;
     line-height: 30px;
-  }
-  .point .point-encapsule-img-s .price-img-button {
-    bottom: 13vw;
   }
 }
 @media (max-width: 750px) {
@@ -1121,10 +1120,9 @@ html {
   }
   .point .point-encapsule-img-f {
     margin-top: 25px;
-    padding: 20px;
   }
   .point .point-encapsule-img-s {
-    margin-top: -25px;
+    margin-top: 25px;
     margin-bottom: 20px;
   }
 }
@@ -1304,6 +1302,257 @@ html {
   }
   .effect .container .effect-ttl .font-sm {
     font-size: 20px;
+  }
+}
+.efficacy {
+  margin-bottom: 45px;
+}
+.efficacy .efficacy-desc {
+  position: relative;
+  margin-bottom: 250rem;
+}
+.efficacy .efficacy-desc-txt {
+  font-size: 40rem;
+  line-height: 65rem;
+  font-family: DNPShueiYMinStd;
+  color: #8a1b21;
+  position: absolute;
+  text-align: center;
+  bottom: -120rem;
+  left: 0px;
+  right: 0px;
+}
+.efficacy .efficacy-desc-txt .under-line {
+  border-bottom: 2px solid #8a1b21;
+}
+.efficacy .container .efficacy-price {
+  margin-top: 25px;
+  position: relative;
+}
+.efficacy .container .efficacy-price .price-img-button {
+  position: absolute;
+  bottom: 9vw;
+  display: flex;
+  justify-content: center;
+}
+.efficacy .container .efficacy-price .price-img-button img {
+  width: 80%;
+}
+.efficacy .container .efficacy-price .price-img-button img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.faq {
+  background-color: #eeeeee;
+}
+.faq .container .faq-ttl {
+  padding: 10px 0;
+  font-size: 70px;
+  line-height: 90px;
+  font-weight: 600;
+  font-family: YuGoPr6N;
+  background: #8a1b21;
+  color: #fefefe;
+  text-align: center;
+}
+.faq .container .faq-list {
+  margin-top: 80px;
+  padding: 20px;
+}
+.faq .container .faq-list .faq-f-a {
+  padding: 50px 20px 20px;
+  position: relative;
+  font-size: 30px;
+  line-height: 50px;
+  font-family: YuGoPr6N;
+  font-weight: 600;
+  background: #ffffff;
+  color: #292929;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.faq .container .faq-list .faq-f-a .faq-f-q {
+  position: absolute;
+  top: -40px;
+  left: -20px;
+  font-size: 40px;
+  line-height: 50px;
+  font-family: DNPShueiYMinStd;
+  color: white;
+  background-color: #8a1b21;
+  display: inline-block;
+  padding: 10px 10px 10px 20px;
+  width: 750px;
+}
+.faq .container .faq-list .mt-80 {
+  margin-top: 80px;
+}
+
+@media (max-width: 992px) {
+  .faq .container .faq-list .faq-f-a .faq-f-q {
+    font-size: 40rem;
+    line-height: 50rem;
+    width: 950rem;
+  }
+}
+@media (max-width: 750px) {
+  .faq .container .faq-ttl {
+    padding: 8px 0;
+    font-size: 70rem;
+    line-height: 90rem;
+  }
+  .faq .container .faq-list {
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .faq .container .faq-list .faq-f-a {
+    padding: 45px 20px 20px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .faq .container .faq-list .faq-f-a .faq-f-q {
+    top: -40rem;
+    left: -20px;
+  }
+  .faq .container .faq-list .mt-80 {
+    margin-top: 50px;
+  }
+}
+.drink .container .drink-ttl {
+  font-size: 50px;
+  line-height: 60px;
+  font-family: DNPShueiYMinStd;
+  color: #292929;
+  text-align: center;
+}
+.drink .container .drink-time {
+  font-size: 35px;
+  line-height: 65px;
+  font-family: DNPShueiYMinStd;
+  color: #292929;
+  text-align: center;
+}
+.drink .container .drink-time .text-red {
+  color: #8a1b21;
+}
+
+@media (max-width: 750px) {
+  .drink .container .drink-ttl {
+    font-size: 90rem;
+    line-height: 120rem;
+  }
+  .drink .container .drink-time {
+    font-size: 70rem;
+    line-height: 80rem;
+  }
+}
+.product {
+  margin-top: 45px;
+}
+.product .container .product-ttl {
+  font-size: 70px;
+  line-height: 90px;
+  font-family: DNPShueiYMinStd;
+  color: #292929;
+  text-align: center;
+}
+.product .container .product-name {
+  margin-top: 30px;
+  font-size: 30px;
+  line-height: 65px;
+  font-family: DNPShueiYMinStd;
+  color: #ffffff;
+  text-align: center;
+  background-color: #8a1b21;
+}
+.product .container .product-name-desc {
+  margin: 20px 0;
+  padding: 20px 45px;
+  font-size: 30px;
+  line-height: 50px;
+  font-family: YuGoPr6N;
+  font-weight: 600;
+  color: #292929;
+  text-align: left;
+  background-color: #fceee9;
+}
+
+@media (max-width: 750px) {
+  .product {
+    margin-top: 25px;
+  }
+  .product .container .product-ttl {
+    font-size: 70rem;
+    line-height: 90rem;
+  }
+  .product .container .product-name {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 50px;
+  }
+  .product .container .product-name-desc {
+    margin: 20px 0;
+    padding: 10px 25px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+.recruitment {
+  margin-top: 80px;
+}
+.recruitment .container .recruitment-box {
+  border: 2px solid #292929;
+  padding: 20px 35px;
+}
+.recruitment .container .recruitment-box .recruitment-ttl {
+  font-size: 30px;
+  line-height: 50px;
+  font-family: YuGoPr6N;
+  font-weight: 600;
+  color: #292929;
+  text-align: center;
+}
+.recruitment .container .recruitment-box .recruitment-desc {
+  font-size: 30px;
+  line-height: 50px;
+  font-family: YuGoPr6N;
+  font-weight: 600;
+  color: #292929;
+  text-align: left;
+}
+
+@media (max-width: 750px) {
+  .recruitment {
+    margin-top: 40px;
+  }
+  .recruitment .container .recruitment-box {
+    border: 2px solid #292929;
+    padding: 15px 25px;
+  }
+  .recruitment .container .recruitment-box .recruitment-ttl {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .recruitment .container .recruitment-box .recruitment-desc {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+footer {
+  margin-top: 80px;
+}
+footer .footer {
+  font-size: 15px;
+  line-height: 45px;
+  font-family: NotoSans;
+  color: #ffffff;
+  text-align: center;
+  background-color: #8a1b21;
+}
+
+@media (max-width: 750px) {
+  footer {
+    margin-top: 40px;
   }
 }
 
