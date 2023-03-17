@@ -922,6 +922,9 @@ html {
     padding: 50px 20px;
   }
 }
+.point {
+  padding-bottom: 35px;
+}
 .point-ttl {
   padding: 40px 0 30px;
   font-size: 20px;
@@ -1029,11 +1032,37 @@ html {
 .point-encapsule-t-sign {
   width: 20%;
 }
+.point .point-encapsule-img-f {
+  margin-top: 45px;
+  padding: 20px;
+}
+.point .point-encapsule-img-s {
+  margin-top: 25px;
+  margin-bottom: 45px;
+  padding: 25px;
+  position: relative;
+}
+.point .point-encapsule-img-s .price-img-button {
+  position: absolute;
+  bottom: 10vw;
+  display: flex;
+  justify-content: center;
+}
+.point .point-encapsule-img-s .price-img-button img {
+  width: 80%;
+}
+.point .point-encapsule-img-s .price-img-button img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 
 @media (max-width: 1200px) {
   .point-f-image-pack .point-f-desc {
     font-size: 25px;
     line-height: 30px;
+  }
+  .point .point-encapsule-img-s .price-img-button {
+    bottom: 13vw;
   }
 }
 @media (max-width: 750px) {
@@ -1089,6 +1118,192 @@ html {
   .point-encapsule-ttl {
     font-size: 50rem;
     line-height: 70rem;
+  }
+  .point .point-encapsule-img-f {
+    margin-top: 25px;
+    padding: 20px;
+  }
+  .point .point-encapsule-img-s {
+    margin-top: -25px;
+    margin-bottom: 20px;
+  }
+}
+.age {
+  background-color: #dfdfdf;
+  padding: 35px;
+}
+.age .container {
+  background-color: white;
+}
+.age .container .age-ttl {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.age .container .age-ttl img {
+  width: 50%;
+}
+.age .container .age-desc-f {
+  font-size: 30px;
+  line-height: 50px;
+  font-family: YuGoPr6N;
+  font-weight: 600;
+  text-align: center;
+  padding: 45px 50px 0px;
+}
+.age .container .age-desc-f .sp-only {
+  display: none;
+}
+.age .container .age-desc-s {
+  font-size: 30px;
+  line-height: 50px;
+  font-family: YuGoPr6N;
+  font-weight: 600;
+  color: #8a1b21;
+  padding: 25px 50px 0px;
+  text-align: center;
+}
+.age .container .age-desc-s .sp-only {
+  display: none;
+}
+.age .container .age-images {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+.age .container .age-images .age-image-f {
+  width: 45%;
+}
+.age .container .age-images .age-image-s {
+  width: 45%;
+}
+
+@media (max-width: 750px) {
+  .age .container .age-desc-f {
+    font-size: 45rem;
+    line-height: 60rem;
+    padding: 25px 0px 0px;
+  }
+  .age .container .age-desc-f .sp-only {
+    display: block;
+  }
+  .age .container .age-desc-s {
+    font-size: 45rem;
+    line-height: 60rem;
+    padding: 25px 0px 0px;
+  }
+  .age .container .age-desc-s .sp-only {
+    display: block;
+  }
+  .age .container .age-images {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+  .age .container .age-images .age-image-f {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .age .container .age-images .age-image-f img {
+    width: 70%;
+  }
+  .age .container .age-images .age-image-s {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .age .container .age-images .age-image-s img {
+    width: 70%;
+  }
+}
+@media (max-width: 550px) {
+  .age .container .age-desc-f {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 25px 0px 0px;
+  }
+  .age .container .age-desc-s {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 25px 0px 0px;
+  }
+}
+.effect {
+  margin-top: 80px;
+  background-color: #8a1b21;
+  position: relative;
+}
+.effect-en-ttl {
+  position: absolute;
+  top: -50px;
+  right: 20px;
+  text-transform: uppercase;
+  font-size: 65px;
+  line-height: 110px;
+  font-family: BodoniSvtyTwo;
+  color: #d89d94;
+}
+.effect .container .effect-ttl {
+  padding-top: 80px;
+  font-size: 70px;
+  line-height: 75px;
+  color: #fefefe;
+  font-family: DNPShueiYMinStd;
+}
+.effect .container .effect-ttl .font-sm {
+  font-size: 60px;
+}
+.effect .container .effect-importance {
+  font-size: 15px;
+  line-height: 30px;
+  color: #dfc1c3;
+  font-family: YuGoPr6N;
+  text-align: right;
+}
+.effect .container .effects {
+  padding-bottom: 45px;
+}
+.effect .container .effects-item {
+  font-size: 40px;
+  line-height: 90px;
+  font-family: DNPShueiYMinStd;
+  color: #dfc1c3;
+}
+.effect .container .effects-item .under-line {
+  border-bottom: 2px solid #dfc1c3;
+}
+
+@media (max-width: 750px) {
+  .effect-en-ttl {
+    font-size: 35px;
+    line-height: 50px;
+    top: -25px;
+  }
+  .effect .container .effect-ttl {
+    padding-top: 40px;
+    font-size: 70rem;
+    line-height: 75rem;
+  }
+  .effect .container .effect-ttl .font-sm {
+    font-size: 60rem;
+  }
+  .effect .container .effects {
+    padding-bottom: 90rem;
+  }
+  .effect .container .effects-item {
+    font-size: 60rem;
+    line-height: 120rem;
+  }
+}
+@media (max-width: 550px) {
+  .effect .container .effect-ttl {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .effect .container .effect-ttl .font-sm {
+    font-size: 20px;
   }
 }
 
