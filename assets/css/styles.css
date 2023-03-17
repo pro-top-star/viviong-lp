@@ -1418,30 +1418,30 @@ html {
     margin-top: 50px;
   }
 }
-.drink .container .drink-ttl {
+.drink .drink-ttl {
   font-size: 50px;
   line-height: 60px;
   font-family: DNPShueiYMinStd;
   color: #292929;
   text-align: center;
 }
-.drink .container .drink-time {
+.drink .drink-time {
   font-size: 35px;
   line-height: 65px;
   font-family: DNPShueiYMinStd;
   color: #292929;
   text-align: center;
 }
-.drink .container .drink-time .text-red {
+.drink .drink-time .text-red {
   color: #8a1b21;
 }
 
 @media (max-width: 750px) {
-  .drink .container .drink-ttl {
+  .drink .drink-ttl {
     font-size: 90rem;
     line-height: 120rem;
   }
-  .drink .container .drink-time {
+  .drink .drink-time {
     font-size: 70rem;
     line-height: 80rem;
   }
